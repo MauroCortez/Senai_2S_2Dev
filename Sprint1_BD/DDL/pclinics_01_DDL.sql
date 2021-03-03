@@ -1,0 +1,61 @@
+CREATE DATABASE Pclinics;
+
+USE Pclinics;
+
+CREATE TABLE Enderecos
+(
+	idEndereco INT PRIMARY KEY IDENTITY
+	,Endereco VARCHAR(200) NOT NULL
+);
+
+CREATE TABLE Clinicas
+(
+	idClinica	INT PRIMARY KEY IDENTITY
+	,Nome		VARCHAR(200) NOT NULL
+	,idEndereco INT	FOREIGN KEY REFERENCES Enderecos(idEndereco)
+);
+
+CREATE TABLE Funcionarios
+(
+	idFuncionario INT PRIMARY KEY IDENTITY
+	,Nome		VARCHAR(200) NOT NULL
+	,CRMV		VARCHAR(3) NOT NULL
+	,idClinica	INT FOREIGN KEY REFERENCES Clinicas(idClinica)
+);
+
+CREATE TABLE Tipos
+(
+	idTipo	INT PRIMARY KEY IDENTITY
+	,Nome	VARCHAR(200) NOT NULL
+);
+
+CREATE TABLE Racas
+(
+	idRaca	INT PRIMARY KEY IDENTITY
+	,Nome	VARCHAR(200) NOT NULL
+	,idTipo	INT FOREIGN KEY REFERENCES Tipos(idTipo)
+);
+
+CREATE TABLE Donos
+(
+	idDono  INT PRIMARY KEY IDENTITY
+	,Nome	VARCHAR(200) NOT NULL
+);
+
+CREATE TABLE Pets
+(
+	idPet	INT PRIMARY KEY IDENTITY
+	,Nome	VARCHAR(200) NOT NULL
+	,DatadeNascimento	DATE NOT NULL
+	,idDono	INT FOREIGN KEY REFERENCES Donos(idDono)
+	,idRaca	INT	FOREIGN KEY REFERENCES Racas(idRaca)
+);
+
+CREATE TABLE Atendimentos
+(
+	idAtendimento	INT PRIMARY KEY IDENTITY
+	,Descricao	VARCHAR(200)
+	,DataAtendimento	DATE
+	,idFuncionario	INT FOREIGN KEY REFERENCES Funcionarios(idFuncionario)
+	,idPet			INT FOREIGN KEY REFERENCES Pets (idPet)
+);
