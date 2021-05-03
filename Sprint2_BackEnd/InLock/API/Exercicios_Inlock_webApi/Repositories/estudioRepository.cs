@@ -10,7 +10,7 @@ namespace Exercicios_Inlock_webApi.Repositories
 {
     public class estudioRepository : IEstudioRepository
     {
-        private string ConexaoString = "Data Source=DESKTOP-OVJKG6T\\SQLEXPRESS; initial catalog=inlock_games_tarde; user Id=sa; pwd=Ted16m12";
+        private string ConexaoString = "Data Source=DESKTOP-M4B6U15; initial catalog=inlock_games_tarde; user Id=sa; pwd=mbc159753123";
 
         /// <summary>
         /// Lista os estudios

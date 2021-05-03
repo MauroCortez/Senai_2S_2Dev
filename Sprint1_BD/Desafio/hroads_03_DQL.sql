@@ -58,32 +58,3 @@ ON ClassHab.idHabilidade = Habilidades.idHabilidade
 RIGHT JOIN Classes
 ON ClassHab.idClasse = Classes.idClasse
 
-
-
-
-
--- PROCEDURE
-USE SENAI_HROADS_TARDE;
-
-CREATE PROCEDURE Exemplo_1
-AS
-SELECT * FROM Habilidades;
-
-
-EXECUTE Exemplo_1
-
-CREATE PROCEDURE Exemplo_2
-@idHabilidade INT
-AS
-SELECT * FROM Habilidades
-WHERE idHabilidade = @idHabilidade;
-
-EXECUTE Exemplo_2 2
-
-ALTER PROCEDURE Exemplo_2
-AS
-SELECT Habilidades.Habilidade, TipoHabilidade.Tipo FROM Habilidades
-LEFT JOIN TipoHabilidade
-ON Habilidades.idTipo = TipoHabilidade.idTipo;
-
-EXECUTE Exemplo_2

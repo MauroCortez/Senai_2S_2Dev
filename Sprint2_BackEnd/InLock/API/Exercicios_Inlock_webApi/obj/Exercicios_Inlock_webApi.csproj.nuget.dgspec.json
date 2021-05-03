@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Senai\\InLock\\API\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi.csproj": {}
+    "C:\\Users\\mauro\\Desktop\\Senai_2S_2Dev\\Sprint2_BackEnd\\InLock\\API\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi.csproj": {}
   },
   "projects": {
-    "D:\\Senai\\InLock\\API\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi.csproj": {
+    "C:\\Users\\mauro\\Desktop\\Senai_2S_2Dev\\Sprint2_BackEnd\\InLock\\API\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Senai\\InLock\\API\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi.csproj",
+        "projectUniqueName": "C:\\Users\\mauro\\Desktop\\Senai_2S_2Dev\\Sprint2_BackEnd\\InLock\\API\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi.csproj",
         "projectName": "Exercicios_Inlock_webApi",
-        "projectPath": "D:\\Senai\\InLock\\API\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi.csproj",
-        "packagesPath": "C:\\Users\\Kaiky\\.nuget\\packages\\",
-        "outputPath": "D:\\Senai\\InLock\\API\\Exercicios_Inlock_webApi\\obj\\",
+        "projectPath": "C:\\Users\\mauro\\Desktop\\Senai_2S_2Dev\\Sprint2_BackEnd\\InLock\\API\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi.csproj",
+        "packagesPath": "C:\\Users\\mauro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mauro\\Desktop\\Senai_2S_2Dev\\Sprint2_BackEnd\\InLock\\API\\Exercicios_Inlock_webApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kaiky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mauro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

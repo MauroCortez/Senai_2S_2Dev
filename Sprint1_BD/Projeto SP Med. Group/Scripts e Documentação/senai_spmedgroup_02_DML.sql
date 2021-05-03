@@ -1,6 +1,6 @@
 USE SP_Medical_Group
 
-INSERT INTO TipoUsuario     (Titulo)
+INSERT INTO TipoUsuario     (NomeTipoUsuario)
 VALUES                      ('Administrador'),
                             ('Medico'),
                             ('Paciente');
@@ -29,7 +29,7 @@ VALUES						(4,'Ligia','1983/10/13','11 3456-7654','43522543-5','94839859000','R
                             ,(10,'Mariana','2018/05/03','','54566266-8','13771913039','R Sao Antonio, 232 - Vila Universal, Barueri - SP, 06407-140');
 GO
 
-INSERT INTO Especialidade	(Especialidade)
+INSERT INTO Especialidade	(NomeEspecialidade)
 VALUES						('Acunpuntura')
 							,('Anestesiologia')
 							,('Angiologia')

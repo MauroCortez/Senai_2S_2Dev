@@ -4,8 +4,8 @@ USE SP_Medical_Group
 
 CREATE TABLE TipoUsuario
 (
-    idTipoUsuario    INT PRIMARY KEY IDENTITY
-    ,Titulo            VARCHAR(200)
+    idTipoUsuario		INT PRIMARY KEY IDENTITY
+    ,NomeTipoUsuario    VARCHAR(200)
 );
 GO
 
@@ -14,7 +14,7 @@ CREATE TABLE Usuario
     idUsuario			INT PRIMARY KEY IDENTITY
     ,idTipoUsusario		INT FOREIGN KEY REFERENCES TipoUsuario(idTipoUsuario)
     ,Email				VARCHAR(200) UNIQUE NOT NULL
-    ,Senha				VARCHAR(200) 
+    ,Senha				VARCHAR(200) NOT NULL
 );
 GO
 
@@ -35,7 +35,7 @@ GO
 CREATE TABLE Especialidade
 (
     idEspecialidade		INT PRIMARY KEY IDENTITY
-    ,Especialidade		VARCHAR(200) NOT NULL
+    ,NomeEspecialidade		VARCHAR(200) NOT NULL
 );
 GO
 
